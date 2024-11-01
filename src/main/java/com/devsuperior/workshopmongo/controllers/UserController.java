@@ -36,4 +36,10 @@ public class UserController {
 								.toUri())
 						.body(newUser));
 	}
+
+	@PutMapping("/{id}")
+	public Mono<ResponseEntity<UserDTO>> update(@PathVariable String id, @RequestBody UserDTO dto) {
+		return service.update(id, dto)
+				.map(newUser -> ResponseEntity.ok().body(newUser));
+	}
 }
