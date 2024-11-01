@@ -3,7 +3,7 @@ package com.devsuperior.workshopmongo.services;
 import com.devsuperior.workshopmongo.dto.UserDTO;
 import com.devsuperior.workshopmongo.entities.User;
 import com.devsuperior.workshopmongo.repositories.UserRepository;
-import com.devsuperior.workshopmongo.services.exceptioons.ResourceNotFoundException;
+import com.devsuperior.workshopmongo.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

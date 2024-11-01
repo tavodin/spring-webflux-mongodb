@@ -1,7 +1,7 @@
 package com.devsuperior.workshopmongo.controllers.handlers;
 
 import com.devsuperior.workshopmongo.dto.CustomError;
-import com.devsuperior.workshopmongo.services.exceptioons.ResourceNotFoundException;
+import com.devsuperior.workshopmongo.services.exceptions.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.server.reactive.ServerHttpRequest;
