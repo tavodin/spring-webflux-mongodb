@@ -42,4 +42,9 @@ public class UserController {
 		return service.update(id, dto)
 				.map(newUser -> ResponseEntity.ok().body(newUser));
 	}
+
+	@DeleteMapping("/{id}")
+	public Mono<ResponseEntity<Void>> update(@PathVariable String id) {
+		return service.delete(id).then(Mono.just(ResponseEntity.noContent().build()));
+	}
 }
